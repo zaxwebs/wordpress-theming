@@ -14,6 +14,7 @@ A collection of notes made while experimenting with Wordpress theming.
 * **Starter Theme** - A WordPress starter theme is a blank theme with minimum design, and a basic or absolutely no layout. These themes usually come with the most commonly used templates in a WordPress theme.
 * **Parent Theme** - A parent theme in WordPress is a theme that is declared parent by a another theme, child theme. This feature in WordPress allows theme designers and developers to take advantage of a larger and robust WordPress themes and make modifications to those themes by creating child themes.
 * **Child Theme** - A child theme in WordPress is a sub theme that inherits all the functionality, features, and style of its parent theme.
+* **Child vs Starter Theme** - Create a child theme when you need to edit an exisiting theme & you want to save the changes on (parent) theme update. Use a starter theme when you want to create a new theme with some of the features, structure & code already set up.
 
 # Plugins
 A list of helpful plugins to use.
