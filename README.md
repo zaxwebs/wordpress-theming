@@ -16,6 +16,8 @@ A list of helpful plugins to use.
 ## Post Types & Fields
 * [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/) - Custom Post Type UI provides an easy to use interface for registering and managing custom post types and taxonomies for your website.
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)- This field builder allows you to quickly and easily add fields to WP edit screens with only the click of a few buttons!
+## Child Theme
+* [Child Theme Generator](https://wordpress.org/plugins/child-theme-generator/) - This plugin will generate a child theme in few steps, quickly and safely, it will not slow down your website or spam your database.
 
 # Tools
 * [Generate WP](https://generatewp.com/) - GenerateWP is a set of tools originally designed for WordPress developers to help them decrease development time by generating various snippets of code.
