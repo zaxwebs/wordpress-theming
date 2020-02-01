@@ -1,11 +1,19 @@
 # WordPress Theming Notes
 A collection of notes made while experimenting with Wordpress theming.
 
+## Helpful Links
+* [WordPress Documentation](https://developer.wordpress.org/)
+* [Coding Standards Handbook](https://developer.wordpress.org/coding-standards/)
+* [WordPress Theme Handbook](https://developer.wordpress.org/themes/)
+* [WordPress Code Reference](https://developer.wordpress.org/reference/)
+* [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/)
+* [Template Hierarchy - Visual](https://wphierarchy.com/)
+
 # Basic Concepts
-* Theme - In WordPress, a theme is a collection of templates and stylesheets used to define the appearance and display of a WordPress powered website.
-* Starter Theme - A WordPress starter theme is a blank theme with minimum design, and a basic or absolutely no layout. These themes usually come with the most commonly used templates in a WordPress theme.
-* Parent Theme - A parent theme in WordPress is a theme that is declared parent by a another theme, child theme. This feature in WordPress allows theme designers and developers to take advantage of a larger and robust WordPress themes and make modifications to those themes by creating child themes.
-* Child Theme - A child theme in WordPress is a sub theme that inherits all the functionality, features, and style of its parent theme.
+* **Theme** - In WordPress, a theme is a collection of templates and stylesheets used to define the appearance and display of a WordPress powered website.
+* **Starter Theme** - A WordPress starter theme is a blank theme with minimum design, and a basic or absolutely no layout. These themes usually come with the most commonly used templates in a WordPress theme.
+* **Parent Theme** - A parent theme in WordPress is a theme that is declared parent by a another theme, child theme. This feature in WordPress allows theme designers and developers to take advantage of a larger and robust WordPress themes and make modifications to those themes by creating child themes.
+* **Child Theme** - A child theme in WordPress is a sub theme that inherits all the functionality, features, and style of its parent theme.
 
 # Plugins
 A list of helpful plugins to use.
