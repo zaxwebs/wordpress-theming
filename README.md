@@ -33,3 +33,9 @@ A list of helpful plugins to use.
 
 # Optional CSS Framework(s) Utilization
 * [Tailwind CSS](https://tailwindcss.com/) with WordPress - https://paulund.co.uk/using-tailwind-css-in-your-wordpress-theme
+
+# Findings While Reverse Engineering an Existing Theme
+Following are some observations while studying the WP Bootstrap 4 theme by [TwoPoints](https://bootstrap-wp.com):
+* '/template-parts' was used to store post-format-specific templates such as content.php, content-post.php, content-none.php.
+* '/page-templates' is was used to store page layouts
+* `get_template_part( 'template-parts/content', get_post_format() );` was used to load content-[post-format].php.
