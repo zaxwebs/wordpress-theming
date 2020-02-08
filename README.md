@@ -39,5 +39,5 @@ Following are some observations while studying the WP Bootstrap 4 theme by [TwoP
 * `/template-parts` was used to store post-format-specific templates such as content.php, content-post.php, content-none.php.
 * `/page-templates` is was used to store page layouts
 * `get_template_part( 'template-parts/content', get_post_format() );` was used to load content-[post-format].php within the loop in index.php and such places.
-* [`esc_url()`](https://developer.wordpress.org/reference/functions/esc_url/), [`esc_html_e()`](https://developer.wordpress.org/reference/functions/esc_html_e/) & similar functions have been used widely.
+* [`esc_url()`](https://developer.wordpress.org/reference/functions/esc_url/), [`esc_html_e()`](https://developer.wordpress.org/reference/functions/esc_html_e/), [`esc_attr()`](https://developer.wordpress.org/reference/) & similar functions have been used widely.
 * Comments were handled using [`comments_open()`](https://developer.wordpress.org/reference/functions/comments_open/), [`get_comments_number()`](https://developer.wordpress.org/reference/functions/get_comments_number/),[`comments_template()`](https://developer.wordpress.org/reference/functions/comments_template/).
