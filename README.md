@@ -60,7 +60,7 @@ Following are some observations while studying the WP Bootstrap 4 theme by [TwoP
 * [`add_theme_support( 'custom-logo' )`](https://developer.wordpress.org/reference/functions/add_theme_support/) - Add support for core custom logo.
 ### Initialize Widgets i.e Register Sidebars
 The following snippet was used (within a custom setup function) to register sidebars (here sidebar-1)
-```
+```php
 register_sidebar( array(
       'name'          => esc_html__( 'Sidebar', 'wp-bootstrap-4' ),
       'id'            => 'sidebar-1',
@@ -73,7 +73,7 @@ register_sidebar( array(
 ```
 ### Add Styles and Scripts
 The following snippet was used:
-```
+```php
 function wp_bootstrap_4_scripts() {
 	wp_enqueue_style( 'open-iconic-bootstrap', get_template_directory_uri() . '/assets/css/open-iconic-bootstrap.css', array(), 'v4.0.0', 'all' );
 	wp_enqueue_style( 'bootstrap-4', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), 'v4.0.0', 'all' );
@@ -89,7 +89,7 @@ add_action( 'wp_enqueue_scripts', 'wp_bootstrap_4_scripts' );
 ```
 ### Add Editor Styles
 The following snippet was used:
-```
+```php
 function wp_bootstrap_4_add_editor_styles() {
     add_editor_style( 'editor-style.css' );
 }
