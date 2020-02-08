@@ -43,5 +43,5 @@ Following are some observations while studying the WP Bootstrap 4 theme by [TwoP
 * Comments were handled using [`comments_open()`](https://developer.wordpress.org/reference/functions/comments_open/), [`get_comments_number()`](https://developer.wordpress.org/reference/functions/get_comments_number/),[`comments_template()`](https://developer.wordpress.org/reference/functions/comments_template/).
 * [`blog_info()`](https://developer.wordpress.org/reference/functions/bloginfo/) is utilized where applicable like for brand name & such.
 * [`wp_nav_menu()`](https://developer.wordpress.org/reference/functions/wp_nav_menu/) was used for menu, which seems to rely on a *walker*.
-* [`is_active_sidebar()`](https://developer.wordpress.org/reference/functions/is_active_sidebar/) & (`dynamic_sidebar()`)[https://developer.wordpress.org/reference/functions/dynamic_sidebar/] were used for displaying the sidebar widgets.
+* [`is_active_sidebar()`](https://developer.wordpress.org/reference/functions/is_active_sidebar/) & [`dynamic_sidebar()`](https://developer.wordpress.org/reference/functions/dynamic_sidebar/) were used for displaying the sidebar widgets.
 * [`the_posts_navigation()`](https://developer.wordpress.org/reference/functions/the_posts_navigation/) was used for displaying pagination links.
