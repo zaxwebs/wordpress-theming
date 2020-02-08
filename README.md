@@ -45,3 +45,54 @@ Following are some observations while studying the WP Bootstrap 4 theme by [TwoP
 * [`wp_nav_menu()`](https://developer.wordpress.org/reference/functions/wp_nav_menu/) was used for menu, which seems to rely on a *walker*.
 * [`is_active_sidebar()`](https://developer.wordpress.org/reference/functions/is_active_sidebar/) & [`dynamic_sidebar()`](https://developer.wordpress.org/reference/functions/dynamic_sidebar/) were used for displaying the sidebar widgets.
 * [`the_posts_navigation()`](https://developer.wordpress.org/reference/functions/the_posts_navigation/) was used for displaying pagination links.
+## functions.php
+* A function_exists() check is performed before defining any custom function.
+* [add_action()](https://developer.wordpress.org/reference/functions/add_action/) hook has the beed used to call each of the custom functions.
+* `functions.php` was utilized to perform these major tasks: setup, initialize widget i.e register sidebars, add styles and scripts, add editor styles, implement some custom features.
+### Setup
+* [`load_theme_textdomain()`](https://developer.wordpress.org/reference/functions/load_textdomain/) - Make theme available for translation.
+* add_theme_support( 'automatic-feed-links' ) - Add default posts and comments RSS feed links to head.
+* add_theme_support( 'title-tag' ) - Let WordPress manage the document title.
+* add_theme_support( 'post-thumbnails' ) - Enable support for Post Thumbnails on posts and pages.
+* add_theme_support( 'post-formats', array( 'gallery', 'video', 'audio', 'status', 'quote', 'link' ) ) - Enable post formats
+* add_theme_support( 'woocommerce' ) - Enable support for woocommerce.
+* [`register_nav_menus()`](https://developer.wordpress.org/reference/functions/register_nav_menus/) - Registers navigation menu locations for theme.
+* [`add_theme_support( 'custom-logo' )`](https://developer.wordpress.org/reference/functions/add_theme_support/) - Add support for core custom logo.
+### Initialize Widgets i.e Register Sidebars
+The following snippet was used (within a custom setup function) to register sidebars (here sidebar-1)
+```
+register_sidebar( array(
+      'name'          => esc_html__( 'Sidebar', 'wp-bootstrap-4' ),
+      'id'            => 'sidebar-1',
+      'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-4' ),
+      'before_widget' => '<section id="%1$s" class="widget border-bottom %2$s">',
+      'after_widget'  => '</section>',
+      'before_title'  => '<h5 class="widget-title h6">',
+      'after_title'   => '</h5>',
+) );
+```
+### Add Styles and Scripts
+The following snippet was used:
+```
+function wp_bootstrap_4_scripts() {
+	wp_enqueue_style( 'open-iconic-bootstrap', get_template_directory_uri() . '/assets/css/open-iconic-bootstrap.css', array(), 'v4.0.0', 'all' );
+	wp_enqueue_style( 'bootstrap-4', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), 'v4.0.0', 'all' );
+	wp_enqueue_style( 'wp-bootstrap-4-style', get_stylesheet_uri(), array(), '1.0.2', 'all' );
+
+	wp_enqueue_script( 'bootstrap-4-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), 'v4.0.0', true );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'wp_bootstrap_4_scripts' );
+```
+### Add Editor Styles
+The following snippet was used:
+```
+function wp_bootstrap_4_add_editor_styles() {
+    add_editor_style( 'editor-style.css' );
+}
+add_action( 'admin_init', 'wp_bootstrap_4_add_editor_styles' );
+```
+* `editor-style.css` was at theme root.
