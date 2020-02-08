@@ -41,3 +41,7 @@ Following are some observations while studying the WP Bootstrap 4 theme by [TwoP
 * `get_template_part( 'template-parts/content', get_post_format() );` was used to load content-[post-format].php within the loop in index.php and such places.
 * [`esc_url()`](https://developer.wordpress.org/reference/functions/esc_url/), [`esc_html_e()`](https://developer.wordpress.org/reference/functions/esc_html_e/), [`esc_attr()`](https://developer.wordpress.org/reference/) & similar functions have been used widely.
 * Comments were handled using [`comments_open()`](https://developer.wordpress.org/reference/functions/comments_open/), [`get_comments_number()`](https://developer.wordpress.org/reference/functions/get_comments_number/),[`comments_template()`](https://developer.wordpress.org/reference/functions/comments_template/).
+* [`blog_info()`](https://developer.wordpress.org/reference/functions/bloginfo/) is utilized where applicable like for brand name & such.
+* [`wp_nav_menu()`](https://developer.wordpress.org/reference/functions/wp_nav_menu/) was used for menu, which seems to rely on a *walker*.
+* [`is_active_sidebar()`](https://developer.wordpress.org/reference/functions/is_active_sidebar/) & (`dynamic_sidebar()`)[https://developer.wordpress.org/reference/functions/dynamic_sidebar/] were used for displaying the sidebar widgets.
+* [`the_posts_navigation()`](https://developer.wordpress.org/reference/functions/the_posts_navigation/) was used for displaying pagination links.
