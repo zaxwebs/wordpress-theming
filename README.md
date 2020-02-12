@@ -98,7 +98,7 @@ add_action( 'admin_init', 'wp_bootstrap_4_add_editor_styles' );
 * `editor-style.css` was at theme root.
 
 # Findings While Building a Theme with [Understrap](https://understrap.com/)
-Understrap combines the Underscores starter theme (by Automattic) and the mobile-first, responsive grid framework Bootstrap 4 (by Twitter) into a perfect open source foundation for your next WordPress theme project.
+"Understrap combines the Underscores starter theme (by Automattic) and the mobile-first, responsive grid framework Bootstrap 4 (by Twitter) into a perfect open source foundation for your next WordPress theme project."
 * The [Understrap Documentation](https://understrap.github.io/) only consists of information on getting started with the build system, surprisingly there's not much about anything else such as structure.
 * **Styles** - Major style files are located at `/sass/theme/_theme.scss` & `/sass/understrap/understrap.scss`.
 * **Page Templates** - Located in `/page-templates`, they are: blank, empty, left, right, both and full-width.
