@@ -103,5 +103,5 @@ Understrap combines the Underscores starter theme (by Automattic) and the mobile
 * **Styles** - Major style files are located at `/sass/theme/_theme.scss` & `/sass/understrap/understrap.scss`.
 * **Page Templates** - Located in `/page-templates`, they are: blank, empty, left, right, both and full-width.
 * **Loop Templates / Template Parts** - blank, empty, none, page, single, content (default).
-* **Sidebar and Global Templates** - Global templates (`/global-templates`) perfrom check and include sidebar templates (`sidebar-templates`).
+* **Sidebar and Global Templates** - Global templates (`/global-templates`) perfrom check and include sidebar templates (`/sidebar-templates`).
 * **Functions** - `functions.php` includes files from `/inc`, while there is a good seperation of concerns in these, they are not that atomic.
