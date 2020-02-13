@@ -8,6 +8,7 @@ A collection of notes made while experimenting with Wordpress theming.
 * [WordPress Code Reference](https://developer.wordpress.org/reference/)
 * [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 * [Template Hierarchy - Visual](https://wphierarchy.com/)
+* [Custom Post Types](https://www.smashingmagazine.com/2012/11/complete-guide-custom-post-types/)
 
 # Basic Concepts
 * **Theme** - In WordPress, a theme is a collection of templates and stylesheets used to define the appearance and display of a WordPress powered website.
