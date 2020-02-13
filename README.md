@@ -105,3 +105,17 @@ add_action( 'admin_init', 'wp_bootstrap_4_add_editor_styles' );
 * **Loop Templates / Template Parts** - blank, empty, none, page, single, content (default).
 * **Sidebar and Global Templates** - Global templates (`/global-templates`) perfrom check and include sidebar templates (`/sidebar-templates`).
 * **Functions** - `functions.php` includes files from `/inc`, while there is a good seperation of concerns in these, they are not that atomic.
+## Creating Custom Post Types
+* This was done with [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
+## Displaying Custom Post Types
+```php
+<?php 
+	$args = array(‘post_type’ => ‘services’, ‘posts_per_page’ => ‘3’);
+	$myQuery = new WP_Query($args);
+?>
+<?php if ($myQuery->have_posts() : ?>
+	<?php while ($myQuery->have_posts() : $myQuery->the_post() ?>
+		// Dislpay the service here...
+	<?php endwhile; wp_reset_postdata(); ?>
+<?php endif; ?>
+```
