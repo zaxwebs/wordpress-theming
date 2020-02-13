@@ -113,9 +113,9 @@ add_action( 'admin_init', 'wp_bootstrap_4_add_editor_styles' );
 	$args = array(‘post_type’ => ‘services’, ‘posts_per_page’ => ‘3’);
 	$myQuery = new WP_Query($args);
 ?>
-<?php if ($myQuery->have_posts() : ?>
-	<?php while ($myQuery->have_posts() : $myQuery->the_post() ?>
-		// Dislpay the service here...
+<?php if ($myQuery->have_posts()) : ?>
+	<?php while ($myQuery->have_posts()) : $myQuery->the_post(); ?>
+		<?php // Dislpay the service here... ?>
 	<?php endwhile; wp_reset_postdata(); ?>
 <?php endif; ?>
 ```
