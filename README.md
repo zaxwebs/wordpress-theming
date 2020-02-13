@@ -31,6 +31,7 @@ A list of helpful plugins to use.
 
 # Tools
 * [Generate WP](https://generatewp.com/) - GenerateWP is a set of tools originally designed for WordPress developers to help them decrease development time by generating various snippets of code.
+* [Hasty](https://www.wp-hasty.com/) - Hasty generates code snippets for WordPress, which you can use in your projects.
 
 # Optional CSS Framework(s) Utilization
 * [Tailwind CSS](https://tailwindcss.com/) with WordPress - https://paulund.co.uk/using-tailwind-css-in-your-wordpress-theme
