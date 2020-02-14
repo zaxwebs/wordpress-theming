@@ -121,3 +121,5 @@ add_action( 'admin_init', 'wp_bootstrap_4_add_editor_styles' );
 	<?php endwhile; wp_reset_postdata(); ?>
 <?php endif; ?>
 ```
+## Registering & Displaying Custom Post Type Taxonomies
+* https://wordpress.stackexchange.com/questions/108570/how-to-display-categories-of-my-custom-post-type
