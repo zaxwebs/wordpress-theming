@@ -126,4 +126,3 @@ add_action( 'admin_init', 'wp_bootstrap_4_add_editor_styles' );
 
 # Gotchas When Building A Professional Theme
 * ACF can be embeded into theme.
-* ACF Required Fields with Guitenberg - By activating Gutenberg in WordPress 4.98 required fields are ignored when saving a post – it saves even if the fields are left empty.
